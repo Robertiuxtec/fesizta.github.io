@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fes Iztacala</title>
+  <link rel="stylesheet" href="formulario-styles.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #333;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .texto-adicional {
+      margin-bottom: 20px;
+    }
+
+    label {
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    input, select {
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px;
+      margin-top: 10px;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button.regresar {
+      background-color: #6c757d;
+    }
+
+    button.enviar {
+      background-color: #28a745;
+    }
+
+    button.imprimir {
+      background-color: #007bff;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Formulario para Licencia de Tesis</h2>
+    <form id="miFormulario">
+      <div class="texto-adicional">
+        <label for="fecha">Los Reyes Iztacala a:</label>
+        <input type="date" id="fecha" name="fecha" required>
+        <p>Dra. María del Coro Arizmendi Arriaga</p>
+        <p>Directora de la FES Iztacala</p>
+        <p>Presente.</p>
+        
+        
+        <p>PPor este conducto me dirijo a usted, con el propósito de solicitarle con base 
+            en el Artículo 95 inciso b del Estatuto del Personal Académico de la UNAM, 
+            una comisión con goce de sueldo por el periodo del
+        <input type="date" id="periodoInicio" name="periodoInicio" required> al <input type="date" id="periodoFinal" name="periodoFinal" required>, Esto con la finalidad de realizar: <input type="text" id="empresa" name="empresa" required></p>  
+          <p>En:<input type="text" id="empresa" name="empresa" required></p>
+
+        <p>Sin más por el momento aprovecho la oportunidad de enviarle un cordial saludo.</p>
+        <P><label for="nombreCompleto">Atentamente</label></P>
+        <input type="text" id="nombreCompleto" name="nombreCompleto" required>
+        <p>Apellido Paterno Materno y Nombre (s)</p>
+      </div>
+
+      <button class="regresar" type="button" onclick="regresar()">Regresar</button>
+    
+      <button class="imprimir" type="button" onclick="imprimir()">Imprimir</button>
+    </form>
+  </div>
+
+  <script src="formulario-scripts.js"></script>
+</body>
+</html>
