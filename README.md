@@ -8,7 +8,7 @@ Este es el código HTML de la página principal de la FES IZTACALA. La página p
 
 ## Cómo Usar
 
-Simplemente clona el repositorio y abre el archivo `index.html` en tu navegador web favorito para explorar la página. Los botones te llevarán a información detallada y formularios correspondientes.
+Simplemente clona el repositorio y abre el archivo `mipagina.html` en tu navegador web favorito para explorar la página. Los botones te llevarán a información detallada y formularios correspondientes.
 
 ## Estructura del Proyecto
 
